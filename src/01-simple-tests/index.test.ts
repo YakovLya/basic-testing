@@ -6,11 +6,11 @@ describe('simpleCalculator tests', () => {
     expect(result).toBe(14);
   });
 
-  test('should substract two numbers', () => {
+  test('should subtract two numbers', () => {
     const result = simpleCalculator({
       a: -5,
       b: -12,
-      action: Action.Substract,
+      action: Action.Subtract,
     });
     expect(result).toBe(7);
   });
