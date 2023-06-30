@@ -1,5 +1,6 @@
 import lodash from 'lodash';
 import {
+  BankAccount,
   getBankAccount,
   InsufficientFundsError,
   SynchronizationFailedError,
@@ -9,6 +10,7 @@ import {
 describe('BankAccount', () => {
   test('should create account with initial balance', () => {
     const acc = getBankAccount(42);
+    expect(acc).toBeInstanceOf(BankAccount);
     expect(acc.getBalance()).toEqual(42);
   });
 
